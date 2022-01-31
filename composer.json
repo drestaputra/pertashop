@@ -1,16 +1,16 @@
 {
-	"description": "REST Server for the CodeIgniter framework",
-	"name": "chriskacerguis/codeigniter-restserver",
+	"description": "Pertashop",
+	"name": "drestaputra/pertashop",
 	"type": "project",
-	"homepage": "https://github.com/chriskacerguis/codeigniter-restserver",
+	"homepage": "https://github.com/drestaputra",
 	"authors": [
 		{
-			"name": "Chris Kacerguis",
+			"name": "Dresta Twas Ardha Putra",
 			"role": "Developer"
 		}
 	],
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=7.2.0",
 		"phpoffice/phpspreadsheet": "^1.18"
 	},
 	"autoload": {

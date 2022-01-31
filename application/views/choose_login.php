@@ -26,7 +26,8 @@
 					<div class="col-md-12">
 						<center >
 							<img class="img-responsive"  style="max-height: 160px;" src="<?php echo base_url('assets/images/logo.png') ?>">
-							<h3 style="margin-top: 10px;">Sistem Informasi Manajemen Aset Tanah Pemerintah Kabupaten Kebumen</h3>
+							<h3 style="margin-top: 10px;">Pertashop</h3>
+							<h4>Sistem Survey Lokasi Pertashop</h4>
 							<br>
 							<h4><b>Pilih Jenis User</b></h4>
 							<br>
@@ -35,14 +36,8 @@
 					</div>
 				</div>
 				<div class="row items-card">
-					<div class="col-md-3 col-xs-6">
-						<a href="<?php echo base_url('super_admin/login'); ?>">
-						<div class="card-login text-center">
-							<img class="img-responsive img-circle" src="<?php echo base_url('assets/images/avatar.png') ?>">
-							<h3>Super Admin</h3>
-						</div>
-						</a>
-					</div>
+					<div class="col-md-3"></div>
+					
 					<div class="col-md-3 col-xs-6">
 						<a href="<?php echo base_url('admin/login'); ?>">
 						<div class="card-login text-center">
@@ -55,21 +50,10 @@
 						<a href="<?php echo base_url('koordinator/login'); ?>">
 						<div class="card-login text-center">
 							<img class="img-responsive img-circle" src="<?php echo base_url('assets/images/avatar.png') ?>">
-							<h3>Koordinator</h3>
+							<h3>Surveyor</h3>
 						</div>
 						</a>
 					</div>
-					<div class="col-md-3 col-xs-6">
-						<a href="<?php echo base_url('pengurus_barang/login'); ?>">
-						<div class="card-login text-center">
-							<img class="img-responsive img-circle" src="<?php echo base_url('assets/images/avatar.png') ?>">
-							<h3>Pengurus Barang</h3>
-						</div>
-						</a>
-					</div>
-					
-					
-					
 				</div>
 			</div>
 		</div>
