@@ -1,4 +1,8 @@
 /* Base */
+:root {
+	--primary: #da2a28;
+	--secondary: #315b9d;
+  }
 a,
 .btn-link {
 	color: #0088cc;
@@ -17,40 +21,40 @@ a:active,
 }
 /* Sidebar Left */
 .sidebar-left .sidebar-header .sidebar-toggle:hover i {
-	color: #0088cc;
+	color: var(--primary);
 }
 
 @media only screen and (min-width: 768px) {
 	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main li.nav-active a:hover,
 	html.sidebar-left-collapsed.boxed .sidebar-left .nav-main li.nav-active a:hover {
-		color: #0088cc;
+		color: var(--primary);
 	}
 
 	html.sidebar-left-collapsed.scroll .sidebar-left .nav-main > li:hover > a span.label,
 	html.sidebar-left-collapsed.boxed .sidebar-left .nav-main > li:hover > a span.label {
-		background-color: #0088cc;
+		background-color: var(--primary);
 	}
 }
 /* Layout Boxed - small than min-width */
 @media only screen and (max-width: 1199px) {
 	html.boxed .header {
-		border-top-color: #0088cc;
+		border-top-color: var(--primary);
 	}
 }
 /* Layout Boxed - larger or equal min width */
 @media only screen and (min-width: 1200px) {
 	html.boxed .header {
-		border-top-color: #0088cc;
+		border-top-color: var(--primary);
 	}
 
 	html.boxed .sidebar-right {
-		border-top-color: #0088cc;
+		border-top-color: var(--primary);
 		min-height: 0;
 	}
 }
 /* Userbox - Open */
 .userbox.open .dropdown-menu a:hover {
-	background: #0088cc;
+	background: var(--primary);
 }
 /* Mailbox */
 .mailbox .mailbox-mail-list li.active {
@@ -322,7 +326,7 @@ p.drop-caps.colored.secundary:first-child:first-letter {
 }
 /* Navigation */
 ul.nav-main > li.nav-active > a {
-	box-shadow: 2px 0 0 #0088cc inset;
+	box-shadow: 2px 0 0 var(--primary) inset;
 }
 
 ul.nav-main > li.nav-active > i {

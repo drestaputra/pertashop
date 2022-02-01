@@ -3,6 +3,11 @@ Name: 			Theme Base
 Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version: 	1.4.1
 */
+:root {
+	--primary: #da2a28;
+	--secondary: #315b9d;
+  }
+
 html,
 body {
 	background: #ecedf0;
@@ -1551,7 +1556,7 @@ html.header-dark .header .input-search .input-group-btn .btn-default {
 	right: 0;
 	width: 73px;
 	height: 50px;
-	background-color: #2baab1;
+	background-color: var(--primary);
 	border-top-right-radius: 10px;
 	text-align: center;
 	cursor: pointer;
@@ -2307,7 +2312,7 @@ ul.nav-main > li > a:hover, ul.nav-main > li > a:focus {
 ul.nav-main > li.nav-active > a {
 	color: white;
 	box-shadow: 2px 0 0 #cccccc inset;
-	background-color: #2baab1;
+	background-color: var(--primary);
 }
 
 ul.nav-main > li.nav-active > a:hover {
@@ -2319,7 +2324,8 @@ ul.nav-main > li.nav-active > i {
 }
 
 ul.nav-main > li.nav-expanded > a {
-	background: #2baab1;
+	background: var(--primary);
+	color: white;
 }
 
 ul.nav-main li a {
@@ -2397,7 +2403,7 @@ ul.nav-main li .nav-children li {
 	padding: 0px 25px;
 }
 ul.nav-main li .nav-children .nav-active {
-	background: #2baab1;
+	background: var(--primary);
 }
 ul.nav-main li .nav-children li a {
 	/*padding: 6px 15px 6px 57px;*/
