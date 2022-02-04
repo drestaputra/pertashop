@@ -311,28 +311,13 @@ class Function_lib {
 
     public static function getLeftMenu(){
         $lib=new function_lib;
-        if (!empty($lib->CI->session->userdata('super_admin'))) {
-            $viewMenu = $lib->CI->load->view('super_admin/left_bar', null, FALSE);
-        }else if (!empty($lib->CI->session->userdata('admin'))) {
-            $viewMenu = $lib->CI->load->view('admin/left_bar', null, FALSE);        
-        }else if (!empty($lib->CI->session->userdata('koordinator'))) {
-            $viewMenu = $lib->CI->load->view('koordinator/left_bar', null, FALSE);        
-        }else if (!empty($lib->CI->session->userdata('pengurus_barang'))) {
-            $viewMenu = $lib->CI->load->view('pengurus_barang/left_bar', null, FALSE);        
-        }
+        $viewMenu = $lib->CI->load->view('user/left_bar', null, FALSE);        
+
         return $viewMenu;
     }
     public static function getHeader(){
         $lib=new function_lib;
-        if (!empty($lib->CI->session->userdata('super_admin'))) {
-            $viewMenu = $lib->CI->load->view('super_admin/header', null, FALSE);
-        }else if (!empty($lib->CI->session->userdata('admin'))) {
-            $viewMenu = $lib->CI->load->view('admin/header', null, FALSE);        
-        }else if (!empty($lib->CI->session->userdata('koordinator'))) {
-            $viewMenu = $lib->CI->load->view('koordinator/header', null, FALSE);        
-        }else if (!empty($lib->CI->session->userdata('pengurus_barang'))) {
-            $viewMenu = $lib->CI->load->view('pengurus_barang/header', null, FALSE);        
-        }
+        $viewMenu = $lib->CI->load->view('user/header', null, FALSE);
         return $viewMenu;
     }
     /*jumlah hari yg digunakan untuk perhitungan jatuh tempo di table owner.tgl_jatuh_tempo_pembayaran_sistem*/
@@ -341,7 +326,7 @@ class Function_lib {
         $hari = $this->get_config_value("masa_jatuh_tempo_pembayaran_sistem");
         return $hari;
     }
-    /*level user : super_admin, admin, owner, kasir,kolektor, user*/
+    
     public function cek_auth($allowed = array()){     
         foreach ($allowed as $key => $value) {
             if (!empty($this->CI->session->userdata($value))) {            

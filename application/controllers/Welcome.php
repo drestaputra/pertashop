@@ -5,7 +5,7 @@ class Welcome extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('Madmin');
+		$this->load->model('Muser');
 	}	
 	public function lupass(){
 		$this->load->model('Mandroid');
@@ -30,19 +30,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('404.php', null, FALSE);
 	}
 	public function index(){
-		$user_sess = $this->function_lib->get_user_level();
-		$level = isset($user_sess['level']) ? $user_sess['level'] : "";
-		if ($level == "super_admin") {
-			redirect('super_admin/dashboard','refresh');
-		}else if($level == "admin"){
-			redirect('admin/dashboard','refresh');			
-		}else if($level == "koordinator"){
-			redirect('koordinator/dashboard','refresh');			
-		}else if($level == "pengurus_barang"){
-			redirect('pengurus_barang/dashboard','refresh');			
-		}else{
-			redirect('login','refresh');
-		}
+		redirect('login','refresh');
 	}
 	public function login(){
 		$this->load->view('choose_login', null, FALSE);
